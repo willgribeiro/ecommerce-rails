@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# E-commerce Ruby on Rails 🛒
+Projeto em desenvolvimento — loja online com autenticação, catálogo de produtos e carrinho de compras.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Status
+🚧 Em construção — funcionalidades em andamento:
+- [x] Cadastro e autenticação de usuários (Devise)
+- [x] CRUD de produtos e categorias
+- [ ] Carrinho de compras e checkout
+- [ ] Integração de pagamentos (Stripe/PagSeguro)
+- [ ] Deploy em Render/Heroku
