@@ -24,7 +24,12 @@
   </head>
 
   <body>
+
     <%= render partial: "home/navbar"%>
-    <%= yield %>
+
+    <div class="container">
+      <%= render partial: "home/flash" %>
+      <%= yield %>
+    </div>
   </body>
 </html>

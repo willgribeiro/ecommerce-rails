@@ -1,1 +1,6 @@
 <h1> Bem vindo a Loja Online </h1>
+
+
+<%= session[:user_id] ? ( "Usuario logado com ID: #{session[:user_id]}" ) : ( "Nenhum usuario logado" ) %>
+
+

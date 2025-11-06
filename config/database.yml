@@ -10,3 +10,7 @@ default: &default
 development:
   <<: *default
   database: lojaonline_development
+
+test:
+  <<: *default
+  database: lojaonline_test 

@@ -1,0 +1,30 @@
+<h1>Product Registration</h1>
+
+<% if flash.any? %>
+  <% flash.each do |key, message| %>
+    <div class="alert 
+                <%= key == 'notice' ? 'alert-success' : 'alert-danger' %> 
+                alert-dismissible fade show" 
+         role="alert">
+      <%= message %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% end %>
+<% end %>
+
+<%= form_with model: @products do |form| %>
+
+  <div class="mb-3">
+    <%= form.label :name, "Product Name", class: "form-label" %>
+    <%= form.text_field :name, class: "form-control", placeholder: "product name" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :price, "Price", class: "form-label" %>
+    <%= form.text_field :price, class: "form-control", placeholder: "price" %>
+  </div>
+
+
+  <%= form.submit "Submit", class: "btn btn-primary" %>
+
+<% end %>
